@@ -6,7 +6,6 @@ def most_frequent_bigram(str)
     char_pairs(str).max_by {|pair| char_pairs(str).count(pair)}
 end
 
-
 def char_pairs(str)
     str.split("")[0...-1].map.with_index{|char, i| char + str[i+1]}
 end
